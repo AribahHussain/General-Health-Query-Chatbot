@@ -1,0 +1,43 @@
+# 🩺 General Health Query Chatbot
+
+This project builds a conversational chatbot that answers general health-related questions using natural language processing, while strictly avoiding sensitive or clinical advice.
+
+## ✅ Objective
+
+To develop a chatbot capable of handling general health questions with a focus on user safety. It simulates friendly, non-medical conversations and avoids risky or inappropriate responses.
+
+## 🛠️ Tools & Technologies
+
+- **Python**: Programming language
+- **Hugging Face Transformers**: For loading conversational models
+- **DialoGPT-medium (Microsoft)**: Pre-trained model for dialogue generation
+- *(Optional)* **OpenAI API**: Mentioned but not used
+
+## 🧠 Methodology
+
+- **Library Setup**: Imported NLP and ML libraries
+- **Model Loading**: Loaded `DialoGPT-medium` from Hugging Face
+- **Sensitive Topic Filtering**: Detects and blocks risky topics like “cancer” or “self-harm”
+- **Conversation Loop**: Runs until the user types “quit”
+- **Response Generation**: Produces friendly, context-aware replies to general health questions
+
+## 🔐 Safety Measures
+
+- Avoids giving any clinical or emergency medical advice
+- Blocks queries involving drug use, prescriptions, or diagnoses
+- Acts as a **non-medical companion chatbot**
+
+## 📊 Results
+
+- Handles health-related FAQs (e.g., diet, hydration, exercise)
+- Responds naturally and safely
+- Prevents responses to unsafe or sensitive topics
+
+## 📌 Conclusion
+
+This chatbot demonstrates the responsible use of NLP for general wellness interaction. It is ideal for educational platforms, research prototypes, or as a support feature in non-clinical health apps.
+
+## 📂 Dataset Information
+
+This chatbot does not rely on an external structured dataset. Instead, it uses **pre-trained conversational language models** from Hugging Face (DialoGPT), which were originally trained on Reddit conversation datasets. No sensitive health data was used or stored.
+
